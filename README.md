@@ -68,12 +68,6 @@ We welcome pull requests!
 - See [CONTRIBUTING.md](./CONTRIBUTING.md) for guidelines.  
 - Check the [issues](./issues) page to pick up tasks.  
 
----
 
-## 📄 License  
-
-This project is licensed under the [MIT License](./LICENSE).
-
----
 
 > 💡 **Tip for visitors:** You can open the [issues tab](./issues) to see what’s currently being worked on, or star the repo ⭐ to follow updates!
