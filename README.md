@@ -1,8 +1,5 @@
 # 🦌 Stone Mountain Species Detection Project  
 
-![Deer from Camera Trap](./images/Deer-ct.png)  
-<sub><i>Example camera-trap image from Stone Mountain</i></sub>
-
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 [![Contributions welcome](https://img.shields.io/badge/contributions-welcome-blue.svg)](./CONTRIBUTING.md)
 [![Python](https://img.shields.io/badge/python-3.10%2B-blue)](https://www.python.org/)
