@@ -22,8 +22,7 @@ We’re currently running a **two-stage architecture**:
 1️⃣ **Stage 1 – Animal Detection**  
 > Classify frames as *animal* vs *empty*.  
 
-2️⃣ **Stage 2 – Species Classification**  
-> Identify which species appears in the frame.  
+2️⃣ **Stage 2 –TBD**  
 
 <details>
 <summary>📊 Click to view pipeline diagram</summary>
@@ -36,26 +35,20 @@ We’re currently running a **two-stage architecture**:
 
 ## 🚀 Recent Progress  
 
-- ✅ Exploratory Data Analysis (EDA) on label distribution & imbalance  
-- ✅ Benchmarked species detection using:  
-  - [YOLO v8](https://github.com/ultralytics/ultralytics)  
-  - GPT-4o  
-  - [Segment Anything Model (SAM)](https://github.com/facebookresearch/segment-anything)  
+- ✅ TBD
 
 ---
 
 ## 🎯 Current Focus  
 
-- 📝 Expanding labeled dataset to full **11 k images** using **semi-supervised pseudo-labeling**  
-- 🌙 Night-vision augmentation & **domain randomization** to improve nocturnal performance  
+- 📝 TBD  
+- 🌙 TBD  
 
 ---
 
 ## 🗓️ Next Steps  
 
-- [ ] Demonstrate reliable **animal vs. empty** classification  
-- [ ] Demo initial **species classification**  
-- [ ] Build an **MVP** on a small hand-labeled Stone Mountain subset  
+- [ ] TBD 
 
 ---
 
