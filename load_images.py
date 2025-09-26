@@ -1,25 +1,28 @@
-import os
 from pathlib import Path
 from PIL import Image
 
-# dataset root
-DATA_ROOT = "/home/hice1/kpanchal30/scratch/stone mt camera full/ProjectInfo/Best Photos"
+# use the storage path (or os.environ["SCRATCH"])
+DATA_ROOT = "/storage/ice1/1/8/kpanchal30/stone mt camera full/ProjectInfo/Best Photos"
+VALID_EXTS = {".jpg", ".jpeg", ".png"}  # lower-case set
 
 def load_images(root):
-    img_paths = []
-    # walk through directory tree
-    for ext in ("*.jpg", "*.jpeg", "*.png"):
-        img_paths.extend(Path(root).rglob(ext))
+    root = Path(root)
+    if not root.exists():
+        print(f"Path does not exist: {root}")
+        return []
+
+    img_paths = [p for p in root.rglob("*") if p.is_file() and p.suffix.lower() in VALID_EXTS]
     print(f"Found {len(img_paths)} images")
 
     images = []
-    for path in img_paths:
+    for p in img_paths:
         try:
-            img = Image.open(path).convert("RGB")
-            images.append((path, img))
-            print(f"Loaded {path} | size={img.size}")
+            with Image.open(p) as im:
+                img = im.convert("RGB")
+            images.append((p, img))
+            print(f"Loaded {p} | size={img.size}")
         except Exception as e:
-            print(f"Failed to load {path}: {e}")
+            print(f"Failed to load {p}: {e}")
     return images
 
 if __name__ == "__main__":
